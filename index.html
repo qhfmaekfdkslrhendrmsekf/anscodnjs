@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Quiz Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .quiz-section {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .options button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn and Quiz with Jeonghan</h1>
+    </header>
+    <div class="container">
+        <div class="quiz-section">
+            <img src="윤정한.jpg" alt="Yoon Jeonghan">
+            <div class="question">
+                <p>What is the capital of South Korea?</p>
+            </div>
+            <div class="options">
+                <button onclick="checkAnswer('A')">A. Seoul</button>
+                <button onclick="checkAnswer('B')">B. Busan</button>
+                <button onclick="checkAnswer('C')">C. Incheon</button>
+                <button onclick="checkAnswer('D')">D. Daegu</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Educational Quiz Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'A') {
+                alert('Correct! Seoul is the capital of South Korea.');
+            } else {
+                alert('Incorrect! The correct answer is Seoul.');
+            }
+        }
+    </script>
+</body>
+</html>
